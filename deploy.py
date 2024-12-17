@@ -4,14 +4,14 @@ import os
 import re
 
 # Load your trained model
-model_path = r'H:\Project\Spam-Email-Detection\Spam-Email-Detection\model.pkl'
+model_path = r'model.pkl'
 if os.path.exists(model_path):
     model = joblib.load(model_path)
 else:
     st.error(f"Model file not found at {model_path}")
 
 # Load your vectorizer
-vectorizer_path = r'H:\Project\Spam-Email-Detection\Spam-Email-Detection\vectorizer.pkl'
+vectorizer_path = r'vectorizer.pkl'
 if os.path.exists(vectorizer_path):
     vectorizer = joblib.load(vectorizer_path)
 else:
