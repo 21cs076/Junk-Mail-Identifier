@@ -45,6 +45,22 @@ The `Spam-Email-Detection` project is relevant for several reasons:
 - **Machine Learning Application**: Demonstrates the application of machine learning techniques in real-world problems, specifically in text classification.
 - **Educational Value**: Provides a learning resource for understanding how to preprocess text data, train machine learning models, and evaluate their performance.
 
+## Dataset
+
+We have used (a public dataset) 'Spam detection using Scikit learn': https://www.kaggle.com/code/yakinrubaiat/spam-detection-using-scikit-learn
+
+The dataset contains **5,728 entries** with the following two columns:
+
+1. **`text`**: A string column containing email content, including the subject line and the body of the email.
+2. **`spam`**: An integer column (binary) indicating whether the email is spam (1) or not spam (0).
+
+### Key Details:
+- **Data type**:
+  - `text`: Object (string).
+  - `spam`: Integer.
+- There are no missing values in either column.
+
+
 ## Model Training
 
 This is used to train multiple machine learning models to detect spam emails. Here’s a detailed explanation of the notebook:
