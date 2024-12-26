@@ -60,7 +60,6 @@ The dataset contains **5,728 entries** with the following two columns:
   - `spam`: Integer.
 - There are no missing values in either column.
 
-
 ## Model Training
 
 This is used to train multiple machine learning models to detect spam emails. Here’s a detailed explanation of the notebook:
