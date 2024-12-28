@@ -6,11 +6,9 @@ This is focused on detecting spam emails using machine learning techniques. Here
 1. **Repository Overview**:
     - **Description**: The repository aims to detect spam emails.
     - **Languages Used**:
-        - Jupyter Notebook: 80.4%
-        - Python: 19.6%
+        - Python: 100%
 
 2. **Key Files**:
-    - **README.md**: Provides a brief description of the project.
     - **train.ipynb**: A Jupyter Notebook used to train different machine learning models for spam detection.
 
 3. **Training Process in `train.ipynb`**:
@@ -47,7 +45,7 @@ The `Spam-Email-Detection` project is relevant for several reasons:
 
 ## Dataset
 
-We have used (a public dataset) 'Spam detection using Scikit learn': https://www.kaggle.com/code/yakinrubaiat/spam-detection-using-scikit-learn
+We have used (a public dataset): [Spam detection using Scikit learn](https://www.kaggle.com/code/yakinrubaiat/spam-detection-using-scikit-learn).
 
 The dataset contains **5,728 entries** with the following two columns:
 
