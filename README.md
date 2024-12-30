@@ -1,4 +1,4 @@
-# Spam-Email-Detection
+# Junk Mail Identifier
 
 ## Introduction
 This is focused on detecting spam emails using machine learning techniques. Here is a detailed explanation of its contents and purpose:
@@ -36,7 +36,7 @@ The repository provides a comprehensive approach to building and evaluating mode
 
 ## Relevance
 
-The `Spam-Email-Detection` project is relevant for several reasons:
+The `Junk Mail Identifier` project is relevant for several reasons:
 
 - **Email Security**: It helps in identifying and filtering out spam emails, which can contain malicious links or attachments that pose security threats.
 - **Productivity**: By filtering spam, it reduces clutter in email inboxes, allowing users to focus on important emails.
