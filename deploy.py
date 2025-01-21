@@ -52,7 +52,7 @@ st.markdown("""
         border: 2px solid #4CAF50;
     }
     .stTextArea textarea {
-        background-color: #ffffff;
+        background-color: #0000FF;
         border-radius: 10px;
         border: 2px solid #ddd;
         padding: 10px;
