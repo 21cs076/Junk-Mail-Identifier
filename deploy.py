@@ -56,7 +56,7 @@ st.markdown("""
         border-radius: 10px;
         border: 2px solid #ddd;
         padding: 10px;
-        color: #0000FF;  /* Input text color set to blue */
+        color: #000000;  /* Ensure text color is visible */
     }
     </style>
     """, unsafe_allow_html=True)
