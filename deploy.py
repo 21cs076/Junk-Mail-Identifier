@@ -56,12 +56,13 @@ st.markdown("""
         border-radius: 10px;
         border: 2px solid #ddd;
         padding: 10px;
+        color: #000000;  /* Ensure text is visible in dark mode */
     }
     </style>
     """, unsafe_allow_html=True)
 
 st.title('📧 Spam Email Detection')
-st.write('Enter the text of the email below to check if it is spam or legitimate.')
+st.write('Paste the Email below.')
 
 input_text = st.text_area('Email Text', height=200)
 if st.button('Predict'):
