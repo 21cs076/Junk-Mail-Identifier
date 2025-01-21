@@ -52,11 +52,11 @@ st.markdown("""
         border: 2px solid #4CAF50;
     }
     .stTextArea textarea {
-        background-color: #0000FF;
+        background-color: #ffffff;
         border-radius: 10px;
         border: 2px solid #ddd;
         padding: 10px;
-        color: #0000FF;  /* Input text color set to blue */
+        color: #000000;  /* Ensure text is visible in dark mode */
     }
     </style>
     """, unsafe_allow_html=True)
