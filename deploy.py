@@ -24,10 +24,46 @@ def preprocess_text(text):
     text = text.strip()  # Remove leading and trailing whitespace
     return text
 
-st.title('Spam Email Detection')
-st.write('Enter the text of the email below:')
+st.set_page_config(page_title="Spam Email Detection", page_icon="📧")
 
-input_text = st.text_area('Email Text')
+# Custom CSS to improve the UI
+st.markdown("""
+    <style>
+    .main {
+        background-color: #f0f2f6;
+    }
+    .stButton>button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .stButton>button:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+    }
+    .stTextArea textarea {
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 2px solid #ddd;
+        padding: 10px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+st.title('📧 Spam Email Detection')
+st.write('Enter the text of the email below to check if it is spam or legitimate.')
+
+input_text = st.text_area('Email Text', height=200)
 if st.button('Predict'):
     if input_text:
         try:
@@ -41,10 +77,10 @@ if st.button('Predict'):
             predictions = model.predict(data_vectorized)
 
             # Map the prediction to "Spam" or "Not Spam"
-            prediction_label = "Suspected Spam" if predictions[0] == 1 else "Legitimate"
+            prediction_label = "🚨 Suspected Spam" if predictions[0] == 1 else "✅ Legitimate"
 
             # Display the prediction
-            st.markdown(f"{prediction_label}")
+            st.markdown(f"## {prediction_label}")
         except Exception as e:
             st.error(f"Error: {e}")
     else:
