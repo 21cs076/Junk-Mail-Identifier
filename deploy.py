@@ -51,13 +51,6 @@ st.markdown("""
         color: black;
         border: 2px solid #4CAF50;
     }
-    .stTextArea>textarea {
-        background-color: #ffffff;
-        border-radius: 10px;
-        border: 2px solid #ddd;
-        padding: 10px;
-        color: #000000;  /* Ensure text color is visible */
-    }
     </style>
     """, unsafe_allow_html=True)
 
