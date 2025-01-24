@@ -55,9 +55,9 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 st.title('📧 Spam Email Detection')
-st.write('Enter the text of the email below')
+st.write('Enter the email below')
 
-input_text = st.text_area('Email Text', height=200)
+input_text = st.text_area('Paste Here', height=200)
 if st.button('Predict'):
     if input_text:
         try:
